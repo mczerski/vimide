@@ -3,18 +3,28 @@ set nocompatible
 syntax on
 set exrc
 set secure
+"setup identiation
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+"make backspace work like in most other programs
 set backspace=indent,eol,start
-set wildmode=longest,list,full
+"hit tab in command mode to get list af all matching command, then hit tab again to cycle them
+set wildmode=list:longest,full
 set wildmenu
+"show spaces, tabs, etc.
 set list
 filetype plugin indent on
 set number
+"search selected text in visual mode with //
 vnoremap // y/<C-R>"<CR>
+"to search for word under the cursor hit f4 (this is configured in {py,cc}.vimrc)
 
-vertical column
+"vertical column
 set colorcolumn=110
 highlight ColorColumn ctermbg=gray
+
+"tips:
+"fuzzy file search
+":e **/*<some text> then hit tab

@@ -6,4 +6,3 @@ if getfsize(".vim/cc.session") >= 0
 endif
 
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **/*.cc **/*.h" <Bar> cw<CR>
-set path=$PWD/Components/**;$PWD/Progs/**
