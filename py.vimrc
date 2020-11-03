@@ -6,4 +6,4 @@ if getfsize(".vim/py.session") >= 0
 endif
 
 "add mappings"
-map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **/*.py" <Bar> cw<CR>
+map <F4> :execute "vimgrep /\\<" . expand("<cword>") . "\\>/j **/*.py" <Bar> cw<CR>

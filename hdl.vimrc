@@ -6,4 +6,4 @@ if getfsize(".vim/hdl.session") >= 0
 endif
 
 "add mappings"
-map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **/*.v **/*.sv **/*.vhd **/*.vhdl" <Bar> cw<CR>
+map <F4> :execute "vimgrep /\\<" . expand("<cword>") . "\\>/j **/*.v **/*.sv **/*.vhd **/*.vhdl" <Bar> cw<CR>

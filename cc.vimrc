@@ -6,4 +6,4 @@ if getfsize(".vim/cc.session") >= 0
 endif
 
 "add mappings"
-map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **/*.cc **/*.h" <Bar> cw<CR>
+map <F4> :execute "vimgrep /\\<" . expand("<cword>") . "\\>/j **/*.cc **/*.h" <Bar> cw<CR>
