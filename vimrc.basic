@@ -15,6 +15,7 @@ set wildmode=list:longest,full
 set wildmenu
 "show spaces, tabs, etc.
 set list
+set ruler
 filetype plugin indent on
 set number
 "search selected text in visual mode with //
@@ -22,7 +23,7 @@ vnoremap // y/<C-R>"<CR>
 "to search for word under the cursor hit f4 (this is configured in {py,cc}.vimrc)
 
 "vertical column
-set colorcolumn=110
+set colorcolumn=120
 highlight ColorColumn ctermbg=gray
 
 "tips:
